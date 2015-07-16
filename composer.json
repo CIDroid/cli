@@ -1,0 +1,28 @@
+{
+    "name": "cidroid/cli",
+    "description": "CIDroid command-line tool",
+    "keywords": [
+        "testing"
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "corneltek/fileutil": "~1",
+        "corneltek/cliframework": "~2.6",
+        "corneltek/configkit": "~1",
+        "symfony/process": "~2"
+    },
+    "require-dev": {
+        "corneltek/universal": "~1.4",
+        "corneltek/phpunit-testmore": "dev-master",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "bin": [
+        "bin/cidroid"
+    ],
+    "autoload": {
+        "psr-4": {
+            "CIDroid\\CLI\\": "src/CIDroid/CLI/"
+        }
+    },
+    "version": "0.1.0"
+}
